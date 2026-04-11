@@ -1,0 +1,26 @@
+[project]
+name = "inference-optimization"
+version = "0.1.0"
+description = "Inference optimization for BERT model"
+readme = "README.md"
+requires-python = "==3.12.11"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "pre-commit==4.5.1",
+    "ruff==0.15.10",
+    "ty==0.0.29",
+]
+
+[tool.uv]
+package = true
+
+[tool.setuptools]
+packages = ["src"]
+
+[tool.ruff.format]
+quote-style = "single"
+
+[tool.ruff]
+line-length = 100
