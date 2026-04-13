@@ -6,6 +6,8 @@ Embedding inference pipeline for [rubert-mini-frida](https://huggingface.co/serg
 - **Part 2** — ONNX Runtime inference
 - **Part 3** — ONNX + Dynamic batching
 
+Detailed performance comparison and optimization analysis are available in the main report — [REPORT.md](REPORT.md)
+
 ## 🛠️ Installation
 
 **Prerequisites:** Python 3.12.11
@@ -87,7 +89,7 @@ Embeddings are L2-normalized CLS-token vectors.
 
 Returns `{"status": "ok"}` when the service is ready.
 
-## Benchmarking
+## 📊 Benchmarking
 
 ### Single run
 
@@ -116,7 +118,7 @@ Starts each service automatically, runs all 5 load scenarios, and saves results 
 uv run run_benchmarks.py
 ```
 
-## Tests
+## 🧪 Tests
 
 ```bash
 uv run pytest tests/
